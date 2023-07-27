@@ -10,6 +10,8 @@ Available in the following notebook, everything is divided into sections and sub
 * [HTML](https://github.com/ahmedxomar101/forecasting-inflation-from-tweets/blob/master/DDE%20Course%20-%20Forecasting%20Inflation%20from%20Tweets%20-%20Ahmed.html) version of the notebook.
 ## Results
 After performing many trials, I have identified two models that can forecast inflation with great performance which is 92.5% and 97.6% better than the baseline of my experiments. 
+
+All the forecasting made is by using 48 months of inflation rate for training (equivalent to 4 years) and forecasting 12 months in one shot.
 1. **ARIMA (Baseline)**, optimal ARIMA Model is (1,1,1)
     * MSE = 4.67
     
