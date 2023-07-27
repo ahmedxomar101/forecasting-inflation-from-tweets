@@ -4,6 +4,38 @@ In this project, I extracted +40 leading indicators to forecast the UK inflation
 These efforts are part of my work for the Data-Driven Economics course in my master's at Sapienza University.
 ## Intro
 Here we have all tweets posted in the UK for the period 2018 to 2022 and the task is to extract leading indicators and signals out of these tweets to forecast the UK inflation rate during that period. We did so with very high performance with the proper feature engineering that yield in extracting the proper indicators.
+## Data
+The data is available at the following [link](https://drive.google.com/file/d/1uDACTehGNzQUAsBmLQeAxYf1le1ONPbK/view?usp=sharing).
+
+Data Attributes Description:
+* |-- id: integer (nullable = false) (hashed id)
+* |-- verb: string (nullable = true) (can be post or share if a RT)
+* |-- user: integer (nullable = false) (hashed user id)
+* |-- inreplyto: struct (nullable = true) (in reply to)
+    * |-- link: string (nullable = true)
+* |-- link: string (nullable = true)
+* |-- body: string (nullable = true) (body of tweet)
+* |-- retweetbody: string (nullable = true) (body of retweeted tweet)
+* |-- date: string (nullable = true) (date)
+* |-- postedtime: string (nullable = true) (date and time)
+* |-- retweetcount: long (nullable = true) (number of RT)
+* |-- favoritescount: long (nullable = true) (number of likes)
+* |-- generator: string (nullable = true) (generator)
+* |-- twitter_lang: string (nullable = true) (language)
+* |-- year: string (nullable = true) (year)
+* |-- userLocation: string (nullable = true) (user location)
+* |-- userFriends: long (nullable = true) (user friends)
+* |-- userFollowers: long (nullable = true) (user followers)
+* |-- userNumTweets: long (nullable = true) (number of tweets)
+* |-- userVerified: boolean (nullable = true) (verified)
+* |-- userLanguage: string (nullable = true) (user language)
+* |-- userBio: string (nullable = true) (user bio)
+* |-- country: string (nullable = true) (country)
+* |-- countrycode: string (nullable = true) (country code)
+* |-- locality: string (nullable = true) (locality)
+* |-- region: string (nullable = true) (region)
+* |-- subregion: string (nullable = true) (sub region)
+* |-- locationname: string (nullable = true) (location name)
 ## Code
 Available in the following notebook, everything is divided into sections and sub-section for ease of navigation:
 * [Notebook](https://github.com/ahmedxomar101/forecasting-inflation-from-tweets/blob/master/DDE%20Course%20-%20Forecasting%20Inflation%20from%20Tweets%20-%20Ahmed.ipynb).
